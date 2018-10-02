@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".EmpresaActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/detalhe_empresa"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="68dp"
+        android:layout_marginTop="55dp"
+        android:text="@string/empresa_detalhes"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="52dp" />
+
+    <ScrollView
+        android:layout_width="339dp"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ebebeb"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="111dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/padding_padrao"
+                android:text='História:\n\nA ATM Assessoria Empresarial iniciou suas atividades em 1993, atuando em parceria com outras empresas de consultoria e terceirizando serviços.\n\nDesenvolveu atividades nos setores financeiro (organização financeira e negociação de passivos bancários), controladoria (sistemas de custos e orçamentos e implantação de sistemas financeiros informatizados), fiscal-tributário e auditorias (patrimonial, contábil e financeira).
+
+Em 1996, também através de parcerias com empresas já estabelecidas no setor iniciou a atuação no segmento de compra e venda de empresas (aquisições e fusões) e elaboração de avaliações empresariais.\n\nEm 1998 começou a atuar de forma totalmente independente e desvinculada de outras empresas, tanto na área de gestão de negócios como assessoria em aquisições e fusões.\n
+
+Em 2000, passou a atender entidades do terceiro setor (associações comerciais, associações de classe e entidades sem fins lucrativos), prestando serviços de gestão e planejamento de entidades.\n\nDesde 2003 o foco passou a ser o empreendedorismo, assessorando empreendedores no planejamento de novos negócios e apoiando a gestão, principalmente no segmento hoteleiro e turístico, onde conquistou importante destaque.'
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
